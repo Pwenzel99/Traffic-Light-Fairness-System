@@ -1,0 +1,19 @@
+module StateDecider(z,A,B,C,D,E,F,G,);
+	input [3:0] z;
+	output A,B,C,D,E,F,G;
+	
+	reg A,B,C,D,E,F,G;
+	
+	always @(z[3] or z[2] or z[1] or z[0])
+		begin
+			case({z[3],z[2],z[1],z[0]})
+				4'b0000: {A,B,C,D,E,F,G} = 7'b0000001;
+				4'b0001: {A,B,C,D,E,F,G} = 7'b0000010;
+				4'b0010: {A,B,C,D,E,F,G} = 7'b0000100;
+				4'b0100: {A,B,C,D,E,F,G} = 7'b0001000;
+				4'b1000: {A,B,C,D,E,F,G} = 7'b0010000;
+				4'b1111: {A,B,C,D,E,F,G} = 7'b0100000;
+				4'b1110: {A,B,C,D,E,F,G} = 7'b1000000;
+			endcase
+		end
+	endmodule

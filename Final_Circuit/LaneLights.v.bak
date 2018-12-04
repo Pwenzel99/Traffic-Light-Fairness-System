@@ -1,0 +1,16 @@
+module LaneLights(Lights,RLights,GLights);
+	input [3:0];
+	output [3:0] RLights,GLights;
+	reg [3:0] RLights, GLights;
+	
+	always @(*)begin
+		GLights[3] = Lights[3];
+		GLights[2] = Lights[2];
+		GLights[1] = Lights[1];
+		GLights[0] = Lights[0];
+		RLights[3] = ~Lights[3];
+		RLights[2] = ~Lights[2];
+		RLights[1] = ~Lights[1];
+		RLights[0] = ~Lights[0];
+	end
+endmodule 

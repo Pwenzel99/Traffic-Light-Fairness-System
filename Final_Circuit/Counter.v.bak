@@ -1,0 +1,28 @@
+module Counter(clk,updn,count,c,n);
+	input clk;
+	input [1:0] updn;
+	input [3:0] c,n;
+	output [3:0] count;
+	integer z=0;
+	reg [3:0] count;
+	
+always @(posedge clk) begin
+			  if((updn[0]==1 && updn[1] == 1)||(updn[1]==0&&updn[0]==0))begin
+					count = count + 1'b0;
+				end
+           else begin
+					if(updn[0] == 1 && !(n[3]==c[3] && n[2]==c[2] && n[1]==c[1] && n[0]==c[0])) begin
+                 count = count + 1'b1;
+					end 
+					else begin
+						count = count +1'b0;
+					end
+					if(updn[1] == 1 && !(n[3]==z && n[2]==z && n[1]==z && n[0]==z)) begin
+                 count = count - 1'b1;
+					end
+					else begin
+						count = count-1'b0;
+					end
+			end
+		end
+endmodule

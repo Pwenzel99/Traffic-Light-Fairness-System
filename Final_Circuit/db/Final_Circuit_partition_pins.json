@@ -1,0 +1,369 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Cap1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Cap1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Cap1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Cap1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Cap1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Cap1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Cap1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Cap2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Cap2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Cap2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Cap2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Cap2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Cap2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Cap2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Cap3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Cap3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Cap3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Cap3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Cap3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Cap3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Cap3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Cap4[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Cap4[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Cap4[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Cap4[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Cap4[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Cap4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Cap4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "CapacityCheck[3]",
+					"strict" : false
+				},
+				{
+					"name" : "CapacityCheck[2]",
+					"strict" : false
+				},
+				{
+					"name" : "CapacityCheck[1]",
+					"strict" : false
+				},
+				{
+					"name" : "CapacityCheck[0]",
+					"strict" : false
+				},
+				{
+					"name" : "GLights[3]",
+					"strict" : false
+				},
+				{
+					"name" : "GLights[2]",
+					"strict" : false
+				},
+				{
+					"name" : "GLights[1]",
+					"strict" : false
+				},
+				{
+					"name" : "GLights[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Lane1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Lane1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Lane1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Lane1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Lane1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Lane1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Lane1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Lane2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Lane2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Lane2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Lane2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Lane2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Lane2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Lane2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Lane3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Lane3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Lane3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Lane3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Lane3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Lane3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Lane3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Lane4[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Lane4[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Lane4[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Lane4[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Lane4[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Lane4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Lane4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RLights[3]",
+					"strict" : false
+				},
+				{
+					"name" : "RLights[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RLights[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RLights[0]",
+					"strict" : false
+				},
+				{
+					"name" : "State[3]",
+					"strict" : false
+				},
+				{
+					"name" : "State[2]",
+					"strict" : false
+				},
+				{
+					"name" : "State[1]",
+					"strict" : false
+				},
+				{
+					"name" : "State[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LaneCap[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LaneCap[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LaneCap[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LaneCap[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Lanes[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Lanes[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Lanes[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Lanes[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Clock3",
+					"strict" : false
+				},
+				{
+					"name" : "Clock2",
+					"strict" : false
+				},
+				{
+					"name" : "Ins[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Ins[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Ins[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Ins[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

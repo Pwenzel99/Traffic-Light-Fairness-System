@@ -1,0 +1,46 @@
+module AB( aslane,s,as1,as2,as3,as4,cap1,cap2,cap3,cap4,capout1,capout2,capout3,capout4,sin,lanein,lanein2);
+	input[3:0] aslane,cap1,cap2,cap3,cap4;
+	input[1:0] lanein,lanein2,sin;
+	output [3:0] s,capout1,capout2,capout3,capout4;
+	output [1:0] as1,as2,as3,as4;
+	reg [3:0] s,capout1,capout2,capout3,capout4;
+	reg [1:0] as1,as2,as3,as4;
+	integer z=0;
+	integer o=1;
+	integer i=0;
+	integer j=0;
+	initial begin for(i=0;i<4;i=i+1)begin
+		capout1[i]=cap1[i];
+		capout2[i]=cap2[i];
+		capout3[i]=cap3[i];
+		capout4[i]=cap4[i];
+		end
+	end
+	always @(*)
+		begin
+			case({aslane[3], aslane[2], aslane[1], aslane[0],lanein[1],lanein[0],sin[1],sin[0],lanein2[1],lanein2[0]})
+				10'b0000000000: {as4[1],as4[0],as3[1],as3[0],as2[1],as2[0],as1[1],as1[0],s[3],s[2],s[1],s[0]} = {z,z,z,z,z,z,z,z,z,z,z,z};
+				10'b1000110100: {as4[1],as4[0],as3[1],as3[0],as2[1],as2[0],as1[1],as1[0],s[3],s[2],s[1],s[0]} = {z,o,z,z,z,z,z,z,o,z,z,z};
+				10'b0100100100: {as4[1],as4[0],as3[1],as3[0],as2[1],as2[0],as1[1],as1[0],s[3],s[2],s[1],s[0]} = {z,z,z,o,z,z,z,z,z,o,z,z};
+				10'b0010010100: {as4[1],as4[0],as3[1],as3[0],as2[1],as2[0],as1[1],as1[0],s[3],s[2],s[1],s[0]} = {z,z,z,z,z,o,z,z,z,z,o,z};
+				10'b0001000100: {as4[1],as4[0],as3[1],as3[0],as2[1],as2[0],as1[1],as1[0],s[3],s[2],s[1],s[0]} = {z,z,z,z,z,z,z,o,z,z,z,o};
+			endcase
+			for(j=0;j<4;j=j+1)begin
+				if(j==4)begin
+					{as4[1],as4[0],as3[1],as3[0],as2[1],as2[0],as1[1],as1[0],s[3],s[2],s[1],s[0]} = {z,z,z,z,z,z,z,z,z,z,z,z};
+				end
+				case({aslane[3], aslane[2], aslane[1], aslane[0],lanein[1],lanein[0],sin[1],sin[0],lanein2[1],lanein2[0]})
+					10'b1100100111: {as4[1],as4[0],as3[1],as3[0],as2[1],as2[0],as1[1],as1[0],s[3],s[2],s[1],s[0]} = {o,z,z,o,z,z,z,z,o,o,z,z};
+					10'b1010010111: {as4[1],as4[0],as3[1],as3[0],as2[1],as2[0],as1[1],as1[0],s[3],s[2],s[1],s[0]} = {o,z,z,z,z,o,z,z,o,z,o,z};
+					10'b1001000111: {as4[1],as4[0],as3[1],as3[0],as2[1],as2[0],as1[1],as1[0],s[3],s[2],s[1],s[0]} = {o,z,z,z,z,z,z,o,o,z,z,o};
+					10'b1000110111: {as4[1],as4[0],as3[1],as3[0],as2[1],as2[0],as1[1],as1[0],s[3],s[2],s[1],s[0]} = {o,z,z,z,z,z,z,z,o,z,z,z};
+					10'b0110010110: {as4[1],as4[0],as3[1],as3[0],as2[1],as2[0],as1[1],as1[0],s[3],s[2],s[1],s[0]} = {z,z,o,z,z,o,z,z,z,o,o,z};
+					10'b0101000110: {as4[1],as4[0],as3[1],as3[0],as2[1],as2[0],as1[1],as1[0],s[3],s[2],s[1],s[0]} = {z,z,o,z,z,z,z,o,z,o,z,o};
+					10'b0100000110: {as4[1],as4[0],as3[1],as3[0],as2[1],as2[0],as1[1],as1[0],s[3],s[2],s[1],s[0]} = {z,z,o,z,z,z,z,z,z,o,z,z};
+					10'b0011000101: {as4[1],as4[0],as3[1],as3[0],as2[1],as2[0],as1[1],as1[0],s[3],s[2],s[1],s[0]} = {z,z,z,z,o,z,z,o,z,z,o,o};
+					10'b0010000101: {as4[1],as4[0],as3[1],as3[0],as2[1],as2[0],as1[1],as1[0],s[3],s[2],s[1],s[0]} = {z,z,z,z,o,z,z,z,z,z,o,z};
+					10'b0001000100: {as4[1],as4[0],as3[1],as3[0],as2[1],as2[0],as1[1],as1[0],s[3],s[2],s[1],s[0]} = {z,z,z,z,z,z,o,z,z,z,z,o};
+				endcase
+			end
+		end
+	endmodule

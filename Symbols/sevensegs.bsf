@@ -1,0 +1,85 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 184 144)
+	(text "sevensegs" (rect 5 0 65 19)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 107 24 124)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "L1[3..0]" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "L1[3..0]" (rect 21 27 67 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "L2[3..0]" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "L2[3..0]" (rect 21 43 67 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "L3[3..0]" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "L3[3..0]" (rect 21 59 67 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "L4[3..0]" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "L4[3..0]" (rect 21 75 67 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 168 32)
+		(output)
+		(text "Lane1[6..0]" (rect 0 0 67 19)(font "Intel Clear" (font_size 8)))
+		(text "Lane1[6..0]" (rect 80 27 147 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 168 32)(pt 152 32)(line_width 3))
+	)
+	(port
+		(pt 168 48)
+		(output)
+		(text "Lane2[6..0]" (rect 0 0 67 19)(font "Intel Clear" (font_size 8)))
+		(text "Lane2[6..0]" (rect 80 43 147 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 168 48)(pt 152 48)(line_width 3))
+	)
+	(port
+		(pt 168 64)
+		(output)
+		(text "Lane3[6..0]" (rect 0 0 67 19)(font "Intel Clear" (font_size 8)))
+		(text "Lane3[6..0]" (rect 80 59 147 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 168 64)(pt 152 64)(line_width 3))
+	)
+	(port
+		(pt 168 80)
+		(output)
+		(text "Lane4[6..0]" (rect 0 0 67 19)(font "Intel Clear" (font_size 8)))
+		(text "Lane4[6..0]" (rect 80 75 147 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 168 80)(pt 152 80)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 152 112))
+	)
+)
