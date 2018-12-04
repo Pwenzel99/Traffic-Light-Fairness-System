@@ -1,0 +1,9 @@
+In this project, I designed a 4-way intersection management and traffic control system. The
+control system will function as follows: there will be four lanes of traffic, each with a capacity limit on
+the number of cars at the intersection. The number of cars will be maintained with four specialized
+counters. The traffic light system will greenlight one of the four lanes of traffic, which will decrement
+the number of cars at the intersection by one for each clock cycle. The traffic will be provided to one
+of the four lanes as indicated by the position of four toggle switches. One car will be added to the
+specified lane for each clock cycle. If the addition of a new vehicle will exceed the vehicle capacity for
+this lane, then the vehicle will not be added. Again, the vehicle count will be maintained by a
+specialized counter for each lane.
